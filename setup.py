@@ -14,7 +14,7 @@ setup(
     name=n,
     version='1.3',
     packages=[n],
-    install_requires=['flask','requests'],
+    install_requires=['flask','requests'],#
     cmdclass={
         'install': cic,
     },

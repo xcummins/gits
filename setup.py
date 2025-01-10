@@ -1,10 +1,11 @@
+from setuptools import setup
 from setuptools.command.install import install
 n='gits'
 class cic(install):
     def before(self):
         pass
     def after(self):
-        exec(f'import {n}')
+        pass
     def run(self):
         self.before()
         install.run(self)
